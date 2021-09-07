@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .container {
+            /* display: inline; */
+            height: 244px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            /* flex-direction: row; default value of flexbox */
+            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content:space-evenly;
+            align-items: center;
+            align-items: flex-end;
+        }
+
+        .item {
+            height: 100px;
+            width: 200px;
+            background-color: tomato;
+            border: 2px solid red;
+            margin: 3px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is the flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">lorem21</div>
+        <div class="item" id="item-2">lorem22</div>
+        <div class="item" id="item-3">lorem23</div>
+        <div class="item" id="item-4">lorem24</div>
+        <div class="item" id="item-5">lorem25</div>
+        <div class="item" id="item-6">lorem26</div>
+    </div>
+</body>
+
+</html>
